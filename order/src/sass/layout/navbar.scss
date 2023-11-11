@@ -1,0 +1,30 @@
+.nav-container{
+    background-color: aqua;
+}
+.navbar{
+    background-color: #cce7f7;
+   @include flexs(center,space-around,0);
+   padding: 1rem;
+
+   .logo img{
+   width: 100px;
+   height: 100px;
+
+ 
+   }
+
+   .nav-link{
+    @include flexs(center,center,1rem);
+    list-style: none;
+    font-size: 1.4rem;
+
+    .link{
+        color: $color-links;
+        text-decoration: none;
+
+        &:hover{
+            color: #e4128d;
+        }
+    }
+   }
+}

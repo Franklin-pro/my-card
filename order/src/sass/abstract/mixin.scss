@@ -1,0 +1,22 @@
+@mixin flexs($alignItems,$justfyContent,$gap){
+    display: flex;
+    justify-content: $justfyContent;
+    align-items: $alignItems;
+    gap: $gap;
+}
+
+// @mixin grid($column,$gap,$align){
+//     display: grid;
+//     grid-template-columns: $column;
+//     gap: $gap;
+//     align-items: $align;
+// }
+
+@mixin button($bg-color,$color){
+    padding: .8rem 2rem;
+    background-color: $bg-color;
+    color: $color;
+    border: none;
+    cursor: pointer;
+    
+}

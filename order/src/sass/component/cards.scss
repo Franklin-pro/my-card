@@ -1,0 +1,49 @@
+.card-container{
+    background-color: rgba(235, 227, 227, 0.486);
+    min-height: 100vh;
+
+    .card-section{
+     @include flexs(center,center,2rem);
+        padding: 1rem 5rem;
+        
+    }
+    .card{
+        width: 300px;
+        background-color: #24b9f1;
+
+         img{
+            width: 100%;
+        }
+        h3{
+            color: aliceblue;
+            padding: 1rem;
+        }
+        .camera{
+            color: aliceblue;
+      margin: 10px 20px;
+      font-size: 1.3rem;
+      text-decoration: none;
+
+      &:hover{
+        color: #f190c9;
+      }
+        }
+        .btn-card{
+            @include flexs(center,center,0rem);
+            padding: 1rem;
+    
+
+            .btn-c{
+                @include button(#cce7f7,#04acec);
+                transition: all .3s;
+                &:hover{
+                letter-spacing: 0.3rem;
+                    box-shadow: 0 0 35px #e4128d;
+                    color: #e4128d;
+             
+                }
+            }
+        }
+    }
+   
+}
